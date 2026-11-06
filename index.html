@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — GeoGame</title>
+<style>
+  :root { --fundo:#ffffff; --texto:#1b2430; --suave:#586374; --linha:#dde3ea; --destaque:#0a6e8f; --cartao:#f5f8fb; --aviso:#fff3b0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fundo:#0d1117; --texto:#e6edf3; --suave:#9aa7b4; --linha:#2a3340; --destaque:#4cc3e6; --cartao:#151b23; --aviso:#5c4b00; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fundo); color:var(--texto); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:2.2em 0 .5em; padding-top:.4em; border-top:1px solid var(--linha); color:var(--destaque); }
+  p, li { color:var(--texto); }
+  .meta { color:var(--suave); font-size:.9rem; margin:0 0 24px; }
+  .resumo { background:var(--cartao); border:1px solid var(--linha); border-radius:10px; padding:14px 18px; }
+  .resumo ul { margin:.4em 0 0; padding-left:1.2em; }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; margin:.8em 0; display:block; overflow-x:auto; }
+  th, td { text-align:left; vertical-align:top; padding:9px 10px; border-bottom:1px solid var(--linha); }
+  th { color:var(--suave); font-weight:600; white-space:nowrap; }
+  a { color:var(--destaque); }
+  .preencher { background:var(--aviso); padding:0 4px; border-radius:3px; }
+  nav { margin-bottom:20px; font-size:.9rem; }
+  nav a + a { margin-left:14px; }
+  code { background:var(--cartao); padding:1px 5px; border-radius:4px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Política de privacidade</a><a href="excluir-conta.html">Excluir minha conta</a></nav>
+
+<h1>Política de Privacidade do GeoGame</h1>
+<p class="meta">Versão 1.1 · atualizada em 6 de novembro de 2026</p>
+
+<div class="resumo">
+  <strong>Resumo em poucas linhas</strong>
+  <ul>
+    <li>Você cria uma conta só com <strong>apelido e senha</strong>. Não pedimos nome, e-mail nem telefone.</li>
+    <li>Sua senha é guardada de forma irreversível: nem nós conseguimos lê-la.</li>
+    <li>Usamos sua localização enquanto o app está aberto, só para mostrar locais por perto. <strong>Não guardamos seu histórico de localização.</strong></li>
+    <li>Guardamos seu inventário de <em>power-ups</em> e quando você os usa nos quizzes, para o jogo funcionar e para a pesquisa.</li>
+    <li>Não há anúncios nem rastreadores de terceiros.</li>
+    <li>Você pode <a href="excluir-conta.html">excluir sua conta e todos os seus dados</a> a qualquer momento, dentro do app.</li>
+  </ul>
+</div>
+
+<h2>1. Quem somos</h2>
+<p>O GeoGame é um jogo de exploração baseado em localização, com textos e quizzes sobre locais de Mossoró/RN. Ele é desenvolvido por <strong>Vitor Duarte</strong> como parte de uma pesquisa de mestrado da Universidade Federal Rural do Semi-Árido (UFERSA), no Programa de Pós-Graduação em Ciência da Computação (PPGCC) da UERN e da UFERSA, sob orientação do Prof. Dr. Bruno de Sousa Monteiro. A pesquisa foi submetida ao Comitê de Ética em Pesquisa (CEP), e a coleta de dados para fins de pesquisa só acontece depois da aprovação. Parecer do CEP: <span class="preencher">[Nº DO PARECER DO CEP, a inserir quando for aprovado]</span>.</p>
+<p>Para dúvidas, pedidos ou reclamações sobre seus dados, escreva para <a href="mailto:vitor.oliveira@alunos.ufersa.edu.br">vitor.oliveira@alunos.ufersa.edu.br</a>.</p>
+
+<h2>2. Quais dados tratamos e para quê</h2>
+<table>
+  <tr><th>Dado</th><th>Para quê</th><th>Como é tratado</th></tr>
+  <tr><td>Apelido</td><td>Identificar sua conta e aparecer no ranking</td><td>Outros jogadores veem seu apelido e seu XP no ranking. Por isso, <strong>escolha um apelido que não revele seu nome real</strong>.</td></tr>
+  <tr><td>Senha</td><td>Entrar na sua conta</td><td>Guardada apenas como <em>hash</em> irreversível (BCrypt). Não é possível recuperá-la, nem por nós.</td></tr>
+  <tr><td>Sessão de login</td><td>Manter você conectado</td><td>No celular, fica no armazenamento seguro do Android. No servidor, guardamos só um hash do código de sessão.</td></tr>
+  <tr><td>Locais que você visitou</td><td>Marcar os locais já explorados no mapa</td><td>Guardamos apenas o identificador do local e a data da primeira visita.</td></tr>
+  <tr><td>Respostas e pontuação dos quizzes, XP e nível</td><td>Seu progresso no jogo e a pesquisa acadêmica</td><td>Guardamos cada tentativa, com as respostas dadas.</td></tr>
+  <tr><td>Power-ups: inventário, coletas e usos</td><td>Fazer o jogo funcionar (bomba, vida e tempo no quiz) e a pesquisa acadêmica, para separar tentativas feitas com e sem ajuda</td><td>Guardamos quantos power-ups de cada tipo você tem, em quais locais você coletou (identificador do local e data) e quando usou cada um (em qual quiz e em qual pergunta). Não guardamos coordenadas.</td></tr>
+  <tr><td>Localização do aparelho</td><td>Listar os locais do jogo perto de você e, ao abrir um local, conferir se você está a até 50 metros dele para poder coletar um power-up</td><td>Usada só com o app aberto (nunca em segundo plano). É enviada ao servidor na busca de locais próximos e ao abrir um local, <strong>mas não é gravada no banco de dados</strong>: não mantemos histórico de por onde você andou.</td></tr>
+  <tr><td>Dados técnicos de conexão (como endereço IP e horário)</td><td>Segurança e funcionamento do servidor</td><td>Podem constar nos registros de acesso da infraestrutura que hospeda o servidor, seguindo a política de quem a mantém.</td></tr>
+</table>
+
+<h2>3. O que não coletamos</h2>
+<p>Não coletamos seu nome, e-mail, telefone, contatos, fotos, nem localização em segundo plano. Não usamos anúncios, ferramentas de análise de uso de terceiros nem rastreadores de publicidade.</p>
+
+<h2>4. Com quem os dados passam</h2>
+<ul>
+  <li><strong>Servidor do jogo.</strong> Os dados da sua conta ficam num servidor hospedado na infraestrutura da Universidade do Estado do Rio Grande do Norte (UERN).</li>
+  <li><strong>Mapa (CARTO e OpenStreetMap).</strong> O app baixa as imagens do mapa diretamente da CARTO, que recebe o endereço IP do seu aparelho e as áreas do mapa que você está vendo. Os dados do mapa são do OpenStreetMap. Cada um segue a própria política de privacidade.</li>
+  <li><strong>Fontes públicas de informação.</strong> Para montar os textos, o servidor consulta Wikipedia, Wikivoyage, Wikidata, OpenStreetMap (Overpass) e OpenWeatherMap. Elas recebem <em>somente as coordenadas do local de interesse</em>, nunca dados da sua conta nem a sua posição.</li>
+  <li><strong>Inteligência artificial.</strong> Os textos e quizzes são gerados por um modelo de linguagem que roda no próprio servidor do projeto. Seus dados pessoais não são enviados a empresas de IA.</li>
+</ul>
+<p>Não vendemos seus dados e não os compartilhamos para fins de publicidade.</p>
+
+<h2>5. Finalidades e base legal</h2>
+<p>Tratamos os dados para (a) fazer o jogo funcionar e (b) realizar a pesquisa acadêmica descrita acima. A base legal é o seu <strong>consentimento</strong> (art. 7º, I, da Lei nº 13.709/2018, a LGPD), dado ao criar a conta e no Termo de Consentimento Livre e Esclarecido (TCLE) da pesquisa, que só passa a valer para fins de pesquisa depois da aprovação do CEP. Os resultados da pesquisa são divulgados de forma agregada e anonimizada: ninguém será identificado por apelido em publicações.</p>
+
+<h2>6. Por quanto tempo guardamos</h2>
+<ul>
+  <li>Os dados da conta ficam guardados enquanto ela existir. Ao <a href="excluir-conta.html">excluir a conta</a>, apagamos tudo o que é seu no banco de dados.</li>
+  <li>Dados da pesquisa de contas ativas são mantidos pelo prazo previsto no protocolo aprovado pelo Comitê de Ética: <span class="preencher">5 anos após o término da pesquisa, conforme a Resolução CNS nº 466/2012 (a confirmar no protocolo)</span>.</li>
+  <li>Resultados que já tenham sido agregados e anonimizados em análises não podem ser desfeitos, pois já não identificam ninguém.</li>
+</ul>
+
+<h2>7. Seus direitos</h2>
+<p>Pela LGPD (art. 18), você pode pedir: confirmação de que tratamos seus dados, acesso a eles, correção, anonimização ou eliminação, portabilidade, informação sobre com quem compartilhamos, e revogar o consentimento a qualquer momento.</p>
+<p>O jeito mais rápido de eliminar seus dados é pelo próprio app (<em>Perfil → Excluir minha conta</em>). Para os demais pedidos, ou se você não consegue mais entrar no app, escreva para <a href="mailto:vitor.oliveira@alunos.ufersa.edu.br">vitor.oliveira@alunos.ufersa.edu.br</a> informando seu apelido. Como a conta não tem e-mail, podemos pedir alguma informação que só o dono saberia (por exemplo, quando você se cadastrou ou alguns locais que visitou) para confirmar que a conta é sua. Respondemos em até 15 dias.</p>
+<p>Se achar que seus dados foram tratados de forma inadequada, você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+<h2>8. Segurança</h2>
+<p>A comunicação entre o app e o servidor é criptografada (HTTPS). Senhas e códigos de sessão são guardados como hashes. O servidor limita tentativas repetidas de login e exige a senha para excluir uma conta. Nenhum sistema é 100% seguro; se houver um incidente que possa afetar você, avisaremos conforme a LGPD.</p>
+
+<h2>9. Crianças e adolescentes</h2>
+<p>O GeoGame é destinado a pessoas com <strong>18 anos ou mais</strong>. Não coletamos dados de menores de propósito; se soubermos de uma conta de menor, ela será excluída.</p>
+
+<h2>10. Mudanças nesta política</h2>
+<p>Se esta política mudar, publicaremos a nova versão nesta página, com a data de atualização no topo. Mudanças importantes serão avisadas dentro do app.</p>
+
+<p class="meta" style="margin-top:3em">GeoGame · pesquisa de mestrado UFERSA</p>
+</main>
+</body>
+</html>
